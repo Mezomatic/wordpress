@@ -7638,18 +7638,3 @@ function wp_fuzzy_number_match( $expected, $actual, $precision = 1 ) {
 	return abs( (float) $expected - (float) $actual ) <= $precision;
 }
 
-
-
-
-## Добавление кнопки разрыва страницы в Виз.Редактор TyniMCE
-/*add_filter('mce_buttons', 'mce_page_break');
-function mce_page_break( $mce_buttons ){
-	$pos = array_search('wp_more', $mce_buttons, true );
-	if( $pos !== false ){
-		$buttons     = array_slice( $mce_buttons, 0, $pos + 1 );
-		$buttons[]   = 'wp_page';
-		$mce_buttons = array_merge( $buttons, array_slice($mce_buttons, $pos + 1) );
-	}
-	return $mce_buttons;
-}
-*/
