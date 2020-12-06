@@ -22,7 +22,7 @@ function custom_button() {
              QTags.addButton( 'custom_button', 'Добавить подсказку', function(a, b, qt){
                 var title, t = this;
                 if ( qt.canvas.selectionStart !== qt.canvas.selectionEnd ) {
-                    title = prompt('Enter Abbreviation');
+                    title = prompt('Введите текст подсказки');
                     if ( title === null ) return;
                     t.tagStart = "<span style='color:red' data-toggle='tooltip' data-placement='top' title='" + title + "'>";
                     t.tagEnd = '</span>';
