@@ -1,10 +1,13 @@
 (function() {
+    // Добавляем плагин в редактор постов
 	tinymce.PluginManager.add('custom_button', function( editor, url ) { 
+        // Добавляем кнопку
 		editor.addButton('custom_button', {  
 			text: 'Подсказка',
             onclick: function() {
                 let content = editor.selection.getContent();
                
+                // Проверяем выделен ли текст
                 if(content == '') {
                     editor.windowManager.open( {
                         title: 'Ошибка',
