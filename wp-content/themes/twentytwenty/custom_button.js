@@ -32,7 +32,7 @@
                             },
                         ],
                         onsubmit: function(e) { 
-                            editor.insertContent("[tooltip title="+ e.data.tooltip_text +"] "+ content + " [/tooltip]");
+                            editor.insertContent("[tooltip title='"+ e.data.tooltip_text +"'] "+ content + " [/tooltip]");
                         }
                     });
                 }
